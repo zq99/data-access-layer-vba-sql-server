@@ -6,7 +6,7 @@ This project is Data Access layer that can be used to connect from VBA to SQL Se
 
 The purpose of the layer is to keep VBA code within projects tidy and core database commands centralized within a project. 
 
-The layer handles writing and reading to SQL Server.
+The layer handles writing and reading data to and from SQL Server.
 
 
 ### Requirements
