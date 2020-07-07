@@ -3,7 +3,7 @@
 -- PURPOSE : This creates the tables and stored procedures required to run the tests for the Data Access Layer
 -- WARNING : This script DROPS and RECREATES the following named database objects:
 --           country
---			 spGetItems
+--	     spGetItems
 --           spDeleteItem
 -- **********************************************************************************************************
 
