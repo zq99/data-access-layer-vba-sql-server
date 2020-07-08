@@ -1,6 +1,6 @@
-## Data Access Layer in VBA for connecting to SQL Server
+# Data Access Layer in VBA for connecting to SQL Server
 
-### Purpose
+## Purpose
 
 This project is Data Access layer that can be used to connect from VBA to SQL Server.
 
@@ -9,7 +9,7 @@ The purpose of the layer is to keep VBA code within projects tidy and core datab
 The layer handles all actions involved with reading and writing data to SQL Server.
 
 
-### Requirements
+## Requirements
 
 You must have the following VBA Project references installed in the VBE Editor reference window (minimum versions stated):
 
@@ -21,7 +21,7 @@ You must have the following VBA Project references installed in the VBE Editor r
 - Microsoft Active X Data Objects Recordset Library 6.0
 - Microsoft ADO Ext. 6.0 for DDL and Security
 
-### Implementation
+## Implementation
 
 There are various examples of how to use the Data Access Layer in the module 'mdTestDataAccessLayer'. These examples include executing
 stored procs on the database to retrieve information as well as executing common CRUD operations. As a glimpse of how the layer works, here is a brief 
@@ -42,7 +42,7 @@ example of getting data from SQL Server using a simple SQL statement:
     oDBInstance.CloseSharedDatabase
 
 
-### Further information
+## Further information
 
 https://datapluscode.com/general/building-a-data-access-layer-in-vba-for-sql-server-part-1/
 
