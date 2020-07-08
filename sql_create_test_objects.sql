@@ -1,9 +1,9 @@
 
 -- **********************************************************************************************************
 -- PURPOSE : This creates the tables and stored procedures required to run the tests for the Data Access Layer
--- WARNING : This script DROPS and RECREATES the following named database objects in the schema DBO:
+-- WARNING : This script DROPS and RECREATES the following named database objects:
 --           country (TABLE)
---	     spGetItems (STORED PROC)
+--			 spGetItems (STORED PROC)
 --           spDeleteItem (STORED PROC)
 -- **********************************************************************************************************
 
@@ -20,18 +20,16 @@ IF (EXISTS (SELECT *
                  WHERE TABLE_SCHEMA = 'dbo' 
                  AND  TABLE_NAME = 'country'))
 BEGIN
-	DELETE FROM [dbo].[country]
+	DROP TABLE [dbo].[country]
 END
-ELSE
-BEGIN
-	CREATE TABLE [dbo].[country]
+GO
+
+CREATE TABLE [dbo].[country]
 		(
 			[country_id] [int] IDENTITY(1,1) PRIMARY KEY,
 			[country_name]   [nvarchar] (200) NULL,
 			[country_region] [nvarchar] (50) NOT NULL
 		) 
-
-END
 GO
 
 BEGIN
@@ -58,7 +56,7 @@ BEGIN
 END
 GO
 
--- This proc demonstrates passing one argument and returns the results of a query
+-- This proc demonstrates passing 1 argument to the database and returning the results of a query
 
 CREATE PROCEDURE [dbo].[spGetItems] @region varchar(50) = null
 AS
@@ -75,8 +73,8 @@ AS
 GO
 
 
--- This proc demonstrates passing one argument executing and action on the database and return a
--- value based on whether that action was successful or not
+-- This proc demonstrates executing a proc on the database that accepts 1 variable and returning a
+-- a result indicating its success.
 
 IF EXISTS (SELECT * 
             FROM   sysobjects 
