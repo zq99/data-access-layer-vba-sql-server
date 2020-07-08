@@ -21,6 +21,17 @@ You must have the following VBA Project references installed in the VBE Editor r
 - Microsoft Active X Data Objects Recordset Library 6.0
 - Microsoft ADO Ext. 6.0 for DDL and Security
 
+
+## Setup
+
+You must specify the name of your server and the name of your database in the class DBInstance. 
+
+These are the 2 lines to amend:
+
+    objDBCredentials.SetServer = "MY_SERVER_NAME"
+    objDBCredentials.SetDBName = "MY_DATABASE_NAME"
+
+
 ## Implementation
 
 There are various examples of how to use the Data Access Layer in the module 'mdTestDataAccessLayer'. These examples include executing
