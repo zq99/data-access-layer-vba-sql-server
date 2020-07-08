@@ -77,3 +77,23 @@ End Sub
 
 
 
+Public Sub GetCountriesUsingSQL()
+
+    Dim rstData     As New ADODB.Recordset
+    Dim oDBInstance As New clsDBInstance
+    Dim oDatabase   As clsDatabase
+    
+    Set oDatabase = oDBInstance.GetSharedDatabase()
+    Set rstData = oDatabase.GetDataFromSQLStatement("SELECT country_name, country_region FROM [dbo].[country]")
+    rstData.MoveFirst
+    Do While Not rstData.EOF
+        Debug.Print rstData.Fields("country_name").Value & " " & rstData.Fields("country_region").Value
+        rstData.MoveNext
+    Loop
+    
+    oDBInstance.CloseSharedDatabase
+    Set rstData = Nothing
+    Set oDBInstance = Nothing
+    Set oDatabase = Nothing
+
+End Sub
