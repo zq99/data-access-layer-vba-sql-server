@@ -45,5 +45,6 @@ example of getting data from SQL Server using a simple SQL statement:
 ## Further information
 
 https://datapluscode.com/general/building-a-data-access-layer-in-vba-for-sql-server-part-1/
+https://datapluscode.com/general/how-to-use-the-data-access-layer-part-2/
 
 
