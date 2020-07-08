@@ -24,8 +24,8 @@ You must have the following VBA Project references installed in the VBE Editor r
 ### Implementation
 
 There are various examples of how to use the Data Access Layer in the module 'mdTestDataAccessLayer'. These examples include executing
-stored procs on the database to retrieve information as well as execute common CRUD operations. As glimpse of how the layer works, here is a brief 
-example getting data from SQL Server using a simple SQL statement:
+stored procs on the database to retrieve information as well as executing common CRUD operations. As glimpse of how the layer works, here is a brief 
+example of getting data from SQL Server using a simple SQL statement:
 
     Dim rstData     As New ADODB.Recordset
     Dim oDBInstance As New clsDBInstance
