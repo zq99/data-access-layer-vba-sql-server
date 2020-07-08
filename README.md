@@ -35,7 +35,7 @@ These are the 2 lines to amend:
 ## Implementation
 
 There are various examples of how to use the Data Access Layer in the module 'mdTestDataAccessLayer'. These examples include executing
-stored procs on the database to retrieve information as well as executing common CRUD operations. As a glimpse of how the layer works, here is a brief 
+stored procs in the database to retrieve data, as well as those used for executing common CRUD operations. As a glimpse of how the layer works, here is a brief 
 example of getting data from SQL Server using a simple SQL statement:
 
     Dim rstData     As New ADODB.Recordset
