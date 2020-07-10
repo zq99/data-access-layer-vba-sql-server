@@ -32,10 +32,21 @@ These are the 2 lines to amend:
     objDBCredentials.SetDBName = "MY_DATABASE_NAME"
 
 
+## Methods
+
+The layer has three main methods:
+
+- ExecuteStoredProc - this is for running stored procs on the database for CRUD operations.
+- GetRecordsetFromStoredProc - this is for retrieving data from the database via stored procs.
+- GetDataFromSQLStatement - this is for retrieving data from the database via a raw SQL query.
+
+All the methods can accept variables being passed back and forth between the layer and the database.
+
+
 ## Implementation
 
 There are various examples of how to use the Data Access Layer in the module 'mdTestDataAccessLayer'. These examples include executing
-stored procs in the database to retrieve data, and for executing common CRUD operations. As a glimpse of how the layer works, here is a brief 
+stored procs in the database to retrieve data, and for executing common CRUD operations. To give you a brief idea of how the layer works, here is an
 example of getting data from SQL Server using a simple SQL statement:
 
     Dim rstData     As New ADODB.Recordset
