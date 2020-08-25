@@ -22,6 +22,13 @@ You must have the following VBA Project references installed in the VBE Editor r
 - Microsoft ADO Ext. 6.0 for DDL and Security
 
 
+## Overview
+
+The layer is organized as follows:
+
+<img src=screenshots/DataAccessLayer.png width=500>
+
+
 ## Configuration
 
 You must specify the name of your server and the name of your database in the class DBInstance. 
