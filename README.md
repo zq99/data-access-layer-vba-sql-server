@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This project features a Data Access layer that can be used by any VBA application to connect to SQL Server.
+This project is a Data Access layer that can be used in any VBA application to connect to SQL Server.
 
 The purpose is to keep database connectivity tidy and core database commands centralized within a project. 
 
